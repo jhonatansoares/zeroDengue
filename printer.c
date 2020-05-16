@@ -46,6 +46,14 @@ void printEndereco(Endereco *e){
         printDataNotFound();
         return;
     }
+    printf("\n*\tPais = %s ", e -> pais );
+    printf("\n*\tEstado = %s ", e -> estado );
+    printf("\n*\tCidade = %s ", e -> cidade );
+    printf("\n*\tBairro = %s ", e -> bairro );
+    printf("\n*\tRua = %s ", e -> rua );
+    printf("\n*\tNumero = %d ", e -> numero );
+    printf("\n*\tComplemento = %s ", e -> complemento );
+    printf("\n*\tCep = %s ", e -> cep );
 }
 void printDenuncia(Denuncia *d){
     if(d == NULL){
