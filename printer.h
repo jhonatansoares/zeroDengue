@@ -1,17 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include "usuario.h"
-#include "telefone.h"
-#include "email.h"
-#include "endereco.h"
-#include "denuncia.h"
-#include "usuario.h"
-#include "data.h"
-#include "filaUsuario.h"
-#include "filaDenuncia.h"
-
-
+#include "fila.h"
 
 void printUsuario(Usuario *);
 void printTelefone(Telefone *);
