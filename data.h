@@ -9,3 +9,4 @@ typedef struct data{
 }Data;
 
 Data * newData(int code, char year[5], char mounth[3], char day[3]);
+void printData(Data *d);

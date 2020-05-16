@@ -15,5 +15,14 @@ Data * newData(int code, char year[5], char mounth[3], char day[3]){
     }
     return NULL;
 }
-
+void printData(Data *d){
+    if(d == NULL){
+        if(d == NULL)[
+            printf("\n\tData nao encontrada");
+            return;
+        ]
+        return;
+    }
+    printf("\n\tData = %s//%s//%s", d -> year, d -> mounth, d -> day);
+}
 
