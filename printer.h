@@ -10,5 +10,6 @@ void printDenuncia(Denuncia *);
 void printData(Data *);
 void printFilaUsuario(FilaUsuario *);
 void printFilaDenuncia(FilaDenuncia *);
+void printDataNotFound();
 
 
