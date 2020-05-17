@@ -2,6 +2,15 @@
 #include <stdlib.h>
 #include "denuncia.h"
 
+
+
+typedef struct Fila{
+    int size;
+    int code;
+    void *first;
+    void *last;
+}Fila;
+
 typedef struct filaDenuncia{
     int size;
     int code;
@@ -18,6 +27,6 @@ typedef struct filaUsuario{
 }FilaUsuario;
 
 
-
+Fila * newFila(int code);
 FilaUsuario * newFilaUsuario(int code);
 FilaDenuncia * newFilaDenuncia(int code);

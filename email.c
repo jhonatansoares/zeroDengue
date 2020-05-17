@@ -12,3 +12,10 @@ Email * newEmail(int cod, char email[50]){
     }
     return NULL;
 }
+void printEmail(Email *e){
+    if(e == NULL){
+        printf("\n\tEmail nao encontrado");
+        return;
+    }
+    printf("\n\tEmail = %s", e -> email);
+}

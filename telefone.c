@@ -13,3 +13,10 @@ Telefone * newTelefone(int code, char number[15]){
     }
     return NULL;
 }
+void printTelefone(Telefone *t){
+    if(t == NULL){
+        printf("n\tTelefone nao encontrado");
+        return;
+    }
+    printf("\n*\tTelefone %s ",t -> number);
+}

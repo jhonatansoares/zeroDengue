@@ -7,3 +7,4 @@ typedef struct email{
 }Email;
 
 Email * newEmail(int cod, char email[50]);
+void printEmail(Email *);

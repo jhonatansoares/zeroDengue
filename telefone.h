@@ -7,3 +7,4 @@ typedef struct telefone{
 }Telefone;
 
 Telefone * newTelefone(int code, char number[15]);
+void printTelefone(Telefone *);

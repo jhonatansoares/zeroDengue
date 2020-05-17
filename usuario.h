@@ -17,3 +17,4 @@ typedef struct usuario{
 }Usuario;
 
 Usuario * newUsuario(int cod, char name[30],char lastName[30],char cpf[15], Telefone *t1, Telefone *t2, Email *email, Endereco *endereco, char login[30], char senha[30]);
+void printUsuario(Usuario *);

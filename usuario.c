@@ -21,3 +21,22 @@ Usuario * newUsuario(int code, char name[30], char lastName[30], char cpf[15], T
 
     }
 }
+void printUsuario(Usuario *u){
+    printf("\n***********************************************************************************");
+    if(u == NULL){
+        printf("t\nUsuario nao encontrado");
+        return;
+    }
+    printf("\n*\tCodigo = %d ", u -> code);
+    printf("\n*\tNome = %s ", u -> name);
+    printf("Sobrenome = %s ", u -> lastName);
+    printf("Cpf = %s ", u -> cpf);
+    printf("\n*\tLogin = %s ", u -> login);
+    printf("Senha = %s ", u -> senha);
+    printTelefone(u -> fone1);
+    printTelefone(u -> fone2);
+    printEmail(u -> email);
+    printf("\n*\t\tEndereco do usuario");
+    printEndereco(u -> endereco);
+    printf("\n***********************************************************************************\n");   
+}
