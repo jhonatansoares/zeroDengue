@@ -20,3 +20,18 @@ Denuncia * newDenuncia( int code, Data *postagem, Data *encerramento, Endereco *
     }
     return NULL;
 }
+void printDenuncia(Denuncia *d){
+    printf("\n******************************************************************************************************************");
+    printf("\n*\tCodigo = %d ", d -> code); 
+    printf("\n*\tStatus = ");
+    printf("%d", d -> status);
+    printf("\n*\tData da postagem  = ");
+    printData(d -> postagem);
+    printf("\n*\tDescricao = %s ",d -> descricao);
+    printf("\n*\tEndereco da denuncia.");
+    printEndereco(d -> endereco);
+    printf("\n*\tUsuario que fez a denuncia: ");
+    printf("\n*\tNome = %s %s Contato = %s %s\n", d -> usuario -> name, d -> usuario -> lastName, d -> usuario -> fone1 -> number, d -> usuario -> fone2 -> number );
+    printf("\n******************************************************************************************************************");
+}
+

@@ -5,17 +5,19 @@
 
 int main(){
     
-
-    Fila *f = newFila(1);
-    Telefone *t = newTelefone(1,"(19)981692393");
-    Telefone *t2 = newTelefone(2,"(19)981692393");
+    Telefone *t = newTelefone(1,"(19)454645666");
+    Telefone *t2 = newTelefone(2,"(19)3456345");
 
     Email *em = newEmail(1,"jhonatansoares62@gmail.com");
     Endereco *en = newEndereco(1,"brasil", "sao paulo", "campinas", "parque via norte", "rua das terras",21 ,"casa","13862837");
-    Usuario *u = newUsuario(1, "jhonatan", "soares", "0919211194-7", t, t2, em, en, "jh", "jh");
+    Usuario *u = newUsuario(1, "jhonatan", "soares", "34538465", t, t2, em, en, "jh", "jh");
 
+    Data *data = newData("1010", "10", "10");
+    Denuncia *d = newDenuncia(1, data, data, en, u, "sem descricao", 1, NULL);
     
     printUsuario(u);
+    printDenuncia(d);
+    
 
     return 0;
 }

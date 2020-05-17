@@ -16,3 +16,4 @@ typedef struct denuncia{
 }Denuncia;
 
 Denuncia * newDenuncia( int code, Data *postagem, Data *encerramento, Endereco *endereco, Usuario *usuario, char descricao[500], int status, Denuncia *next);
+void printDenuncia(Denuncia *);
