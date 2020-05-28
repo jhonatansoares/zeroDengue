@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "denuncia.h"
+#include "../headers/denuncia.h"
+#include "../headers/printer.h"
 
 
+//construtor
 Denuncia * newDenuncia( int code, Data *postagem, Data *encerramento, Endereco *endereco, Usuario *usuario, char descricao[500], int status, Denuncia *next){
     Denuncia *d = (Denuncia *)malloc(sizeof(Denuncia));
 
@@ -20,8 +22,10 @@ Denuncia * newDenuncia( int code, Data *postagem, Data *encerramento, Endereco *
     }
     return NULL;
 }
+//imprime a denuncia
 void printDenuncia(Denuncia *d){
-    printf("\n******************************************************************************************************************");
+    printChar('*', 120);
+    printf("\n");
     printf("\n*\tCodigo = %d ", d -> code); 
     printf("\n*\tStatus = ");
     printf("%d", d -> status);
@@ -32,6 +36,7 @@ void printDenuncia(Denuncia *d){
     printEndereco(d -> endereco);
     printf("\n*\tUsuario que fez a denuncia: ");
     printf("\n*\tNome = %s %s Contato = %s %s\n", d -> usuario -> name, d -> usuario -> lastName, d -> usuario -> fone1 -> number, d -> usuario -> fone2 -> number );
-    printf("\n******************************************************************************************************************");
+    printChar('*', 120);
+    printf("\n");
 }
 

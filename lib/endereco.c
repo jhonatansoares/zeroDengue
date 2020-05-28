@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "endereco.h"
+#include "../headers/endereco.h"
 
 Endereco * newEndereco(int code, char pais[30], char estado[30], char cidade[30], char bairro[50], char rua[50], int numero, char complemento[20], char cep[15]){
     Endereco *e = (Endereco *)malloc(sizeof(Endereco));
@@ -32,5 +32,5 @@ void printEndereco(Endereco *e){
     printf("\n*\tRua = %s ", e -> rua );
     printf("\n*\tNumero = %d ", e -> numero );
     printf("\n*\tComplemento = %s ", e -> complemento );
-    printf("\n*\tCep = %s ", e -> cep );
+    printf("\n*\tCep = %s\n", e -> cep );
 }

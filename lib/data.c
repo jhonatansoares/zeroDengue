@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "data.h"
+#include "../headers/data.h"
 
 
 Data * newData(char year[5], char mounth[3], char day[3]){

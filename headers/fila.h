@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "denuncia.h"
+#include "..\headers\denuncia.h"
 
 
 void insertU(Usuario *, Usuario *);

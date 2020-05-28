@@ -1,7 +1,8 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "usuario.h"
+#include "../headers/usuario.h"
+#include "../headers/printer.h"
+
 
 Usuario * newUsuario(int code, char name[30], char lastName[30], char cpf[15], Telefone *t1, Telefone *t2, Email *email, Endereco *endereco, char login[30], char senha[30]){
     Usuario *u = (Usuario *)malloc(sizeof(Usuario));
@@ -22,7 +23,8 @@ Usuario * newUsuario(int code, char name[30], char lastName[30], char cpf[15], T
     }
 }
 void printUsuario(Usuario *u){
-    printf("\n***********************************************************************************");
+    printf("\n");
+    printChar('*', 120);
     if(u == NULL){
         printf("t\nUsuario nao encontrado");
         return;
@@ -38,5 +40,6 @@ void printUsuario(Usuario *u){
     printEmail(u -> email);
     printf("\n*\t\tEndereco do usuario");
     printEndereco(u -> endereco);
-    printf("\n***********************************************************************************\n");   
+    printChar('*', 120);
+    printf("\n");
 }

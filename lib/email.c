@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "email.h"
+#include "../headers/email.h"
 
 Email * newEmail(int cod, char email[50]){
     Email *e = (Email *)malloc(sizeof(Email));

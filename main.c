@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "fila.h"
+#include "headers/fila.h"
+#include "headers/printer.h"
+#include "headers/tela.h"
 
 
 int main(){
@@ -17,7 +19,8 @@ int main(){
     
     printUsuario(u);
     printDenuncia(d);
-    
 
+    exibirCabecalho();        
+    exibirOpcoesTelaInicial();
     return 0;
 }

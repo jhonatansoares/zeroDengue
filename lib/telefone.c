@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "telefone.h"
+#include "../headers/telefone.h"
 
 Telefone * newTelefone(int code, char number[15]){
     Telefone *t = (Telefone *)malloc(sizeof(Telefone));
